@@ -21,6 +21,6 @@ gcr.io/ml-pipeline/mysql:8.0.26
 gcr.io/ml-pipeline/persistenceagent:2.0.0-alpha.6
 gcr.io/ml-pipeline/scheduledworkflow:2.0.0-alpha.6
 gcr.io/ml-pipeline/viewer-crd-controller:2.0.0-alpha.6
-gcr.io/ml-pipeline/visualization-server
+gcr.io/ml-pipeline/visualization-server:2.0.0-alpha.6
 gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
 gcr.io/tfx-oss-public/ml_metadata_store_server:1.5.0  
