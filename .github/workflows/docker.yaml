@@ -71,7 +71,7 @@ jobs:
             # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
             image=$(echo "$line" | awk '{print $NF}')
             # 将@sha256:等字符删除
-            image="${image%%@*}"
+            #image="${image%%@*}"
             echo "image $image"
             # 获取镜像名:版本号  例如nginx:1.25.3
             image_name_tag=$(echo "$image" | awk -F'/' '{print $NF}')
@@ -129,16 +129,18 @@ jobs:
         
             name_space_prefix=""
             # 如果镜像名重名
-            if [[ -n "${duplicate_images[$image_name]}" ]]; then
+            #if [[ -n "${duplicate_images[$image_name]}" ]]; then
                #如果命名空间非空，将命名空间加到前缀
-               if [[ -n "${name_space}" ]]; then
-                  name_space_prefix="${name_space}_"
-               fi
-            fi
+               #if [[ -n "${name_space}" ]]; then
+                  #name_space_prefix="${name_space}_"
+               #fi
+            #fi
             
             # 将@sha256:等字符删除
-            image_name_tag="${image_name_tag%%@*}"
-            new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
+            #image_name_tag="${image_name_tag%%@*}"
+            #new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
+
+            new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$image"
             echo "docker tag $image $new_image"
             docker tag $image $new_image
             echo "docker push $new_image"
