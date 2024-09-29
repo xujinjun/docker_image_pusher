@@ -1,5 +1,1 @@
-gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:33d78536e9b38dbb2ec2952207b48ff8e05acb48e7d28c2305bd0a0f7156198f
-gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:282b5265e1ef26309b3343038c9b4f172654e06cbee46f6ddffd23ea9ad9a3be
-gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:d217ab7e3452a87f8cbb3b45df65c98b18b8be39551e3e960cd49ea44bb415ba
-gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:2b484d982ef1a5d6ff93c46d3e45f51c2605c2e3ed766e20247d1727eb5ce918
-gcr.io/knative-releases/knative.dev/net-istio/cmd/webhook@sha256:59b6a46d3b55a03507c76a3afe8a4ee5f1a38f1130fd3d65c9fe57fff583fa8d
+gcr.io/arrikto/kubeflow/oidc-authservice:e236439
